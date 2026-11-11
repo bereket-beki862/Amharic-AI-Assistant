@@ -15,7 +15,8 @@ DATASET_DIR = TRAIN_FILE.parent
 
 # Audio clips directory
 AUDIO_DIR = DATASET_DIR / "clips"
-
+PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
+PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 # Print configuration information
 print("Dataset connected!")
 print("Project root:", PROJECT_ROOT)
